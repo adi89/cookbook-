@@ -1,0 +1,18 @@
+<ol>
+
+<% @books.each do |book| %>
+<ul>
+
+  <li><%= link_to(book.title, book) %> </li>
+  <li> Primal : <%= book.cuisine %> </li>
+  <li> Author/Chef Extraordinaire : <%= book.chef %> </li>
+  <%= image_tag(book.image) %>
+</ul>
+
+<% end %>
+<ul>
+
+</ol>
+
+<%# object knows that show page is coming. show method coming next. it goes to the id next in the route ) %>
+

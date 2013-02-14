@@ -1,0 +1,10 @@
+  <% @ingredients.each  do |ingredient| %>
+
+
+    <p><%= link_to(ingredient.name, ingredient) %></p>
+    <p><%= ingredient.name %></p>
+    <p><%= image_tag(ingredient.image) %></p>
+
+   <% end %>
+
+

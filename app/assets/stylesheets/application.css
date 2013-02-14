@@ -1,0 +1,16 @@
+/*!
+*= require bootstrap
+
+*/
+
+
+
+.recipe{
+  float: left;
+  display: inline-block;
+}
+
+img{
+  display: inline-block;
+}
+

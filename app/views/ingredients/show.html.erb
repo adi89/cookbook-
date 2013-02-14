@@ -1,0 +1,10 @@
+
+    <p><%= @ingredient.name %></p>
+    <p><%= image_tag(@ingredient.image) %></p>
+
+<%= link_to 'edit', edit_ingredient_path(@ingredient) %>
+
+
+<%= link_to 'delete', @ingredient, :method => :delete, :confirm => 'will you actually delete this?' %>
+
+

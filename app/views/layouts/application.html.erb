@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>R20130214Cookbook</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<ul class="nav nav-tabs">
+  <li class="active">
+    <a href= 'books_path'>Home</a>
+  </li>
+  <li><%= link_to('new book', new_book_path) %></li>
+  <li><%= link_to('new recipe', new_recipe_path) %></li>
+  <li><%= link_to('new ingredient', new_ingredient_path) %></li>
+
+
+
+
+
+<%= yield %>
+
+</body>
+</html>

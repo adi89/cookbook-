@@ -1,0 +1,29 @@
+<%= link_to(@book.title, @book) %>
+  <br>
+  <p> Cuisine: <%= @book.cuisine %> </p>
+   <p> Chef: <%= @book.chef %> </p>
+  <div id= 'bookpic'><%= image_tag(@book.image) %></div>
+
+  <%= link_to 'delete', @book, :method => :delete, :confirm => 'will you actually delete this?' %> <%# you have to specify delete but not edit. that's cuz it's not a post or get %>
+
+  <%= link_to 'edit', edit_book_path(@book) %>
+
+  <br>
+<div class="recipe">
+  <% @book.recipes.each do |recipe| %> <%# array of recipe objetcs...for each object do %>
+        <p> recipe: <%= recipe.name %></p>
+        <%= image_tag(recipe.image) %>
+
+        <br>
+
+        <% recipe.ingredients.each do |ingredient| %>
+            <p><%= ingredient.name %></p>
+            <p><%= image_tag(ingredient.image) %></p>
+
+          <% end %>
+
+
+      <% end %></div>
+
+
+
